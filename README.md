@@ -1,18 +1,19 @@
-# Customizeable Grid hotkeys for StarCraft 2
+# Customizeable Grid hotkey profiles for StarCraft 2
 
 ## Installation
 
-- Download the zip in the top right of this repository.
+- Download the `.zip` file in the top right of this website
 - Extract
-- Copy desired `.SC2Hotkeys` file to path below:
+- Copy desired `.SC2Hotkeys` file to SC2 hotkey path (see below)
+- Customize the hotkey profile inside StarCraft2
 
-Path for online games (windows):
+Hotkey path for online games (windows):
 
 ```
 C:\Users\USERNAME\Documents\StarCraft II\Accounts\ACCOUNTNUMBER\Hotkeys\QWERTY.SC2Hotkeys
 ```
 
-Path for offline games (windows):
+Hotkey path for offline games (e.g. when accessed through map editor)
 
 ```
 C:\Users\USERNAME\Documents\StarCraft II\Hotkeys
