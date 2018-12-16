@@ -9,7 +9,7 @@ IdleWorker=Grave
 CommandButtonAlt04=
 CommandButtonAlt08=
 CommandButtonAlt09=
-TargetChoose=LeftMouseButton,Y,C,X,V,J
+TargetChoose=LeftMouseButton,Y,C,X,V,J,Z
 WarpIn=H
 MenuAchievements=
 ObserveZoomCameraLevel1=Y
@@ -19,6 +19,7 @@ CameraTurnRight=NumPad3
 CameraZoomFirst=Home,NumPad2
 CameraZoomLast=End,NumPad5
 CommandButton10=Z,OEM102
+ControlGroupAssignAndSteal0=Alt+0,N,M
 
 [Commands]
 
