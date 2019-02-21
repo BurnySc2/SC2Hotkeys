@@ -4,22 +4,30 @@ Suffix=_GLS
 
 [Hotkeys]
 PTT=
-ArmySelect=ForwardMouseButton
-IdleWorker=Grave
-CommandButtonAlt04=
-CommandButtonAlt08=
-CommandButtonAlt09=
-TargetChoose=LeftMouseButton,Y,C,X,V,J,Z
-WarpIn=H
 MenuAchievements=
 ObserveZoomCameraLevel1=Y
 ObserveZoomCameraLevel2=Shift+Y
+ArmySelect=ForwardMouseButton
 CameraTurnLeft=NumPad1
 CameraTurnRight=NumPad3
 CameraZoomFirst=Home,NumPad2
 CameraZoomLast=End,NumPad5
-CommandButton10=Z,OEM102
+CommanderAbility0=F1
+CommanderAbility1=F2
+CommanderAbility2=F3
+CommanderAbility3=F4
 ControlGroupAssignAndSteal0=Alt+0,N,M
+IdleWorker=Grave
+InventoryButtonUse0=
+InventoryButtonUse1=
+InventoryButtonUse2=
+InventoryButtonUse4=
+TargetChoose=LeftMouseButton,Y,C,X,V,J,Z
+WarpIn=H
+CommandButtonAlt04=
+CommandButtonAlt08=
+CommandButtonAlt09=
+CommandButton10=Z,OEM102
 
 [Commands]
 
