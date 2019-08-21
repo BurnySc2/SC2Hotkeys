@@ -238,6 +238,7 @@ ResearchCharge/TwilightCouncil=Q
 ResearchCycloneRapidFireLaunchers/FactoryTechLab=R
 ResearchDarkTemplarBlink/DarkShrine=Q
 ResearchDrillClaws/FactoryTechLab=W
+ResearchEnhancedShockwaves/GhostAcademy=W
 ResearchGraviticBooster/RoboticsBay=Q
 ResearchGraviticDrive/RoboticsBay=W
 ResearchHiSecAutoTracking/EngineeringBay=A
@@ -347,5 +348,4 @@ zerglingattackspeed/SpawningPool=W
 zerglingmovementspeed/SpawningPool=Q
 zergmeleeweapons1/EvolutionChamber=Q
 zergmissileweapons1/EvolutionChamber=W
-CyberneticsCore/Probe=Y
 
