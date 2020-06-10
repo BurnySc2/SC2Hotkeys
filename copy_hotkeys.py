@@ -8,7 +8,7 @@ import getpass
 # Linux
 if platform.system() == "Linux":
     source_hotkeys = "/home/burny/Dropbox/github/SC2Hotkeys/Burny.SC2Hotkeys"
-    source_hotkeys2 = "/home/burny/Dropbox/github/SC2HotkeysSmurf/BurnySteal.SC2Hotkeys"
+    source_hotkeys2 = "/home/burny/Dropbox/github/SC2Hotkeys/BurnySteal.SC2Hotkeys"
 # Windows
 else:
     source_hotkeys = r"D:\Dropbox\github\SC2Hotkeys\Burny.SC2Hotkeys"
