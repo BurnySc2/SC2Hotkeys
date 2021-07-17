@@ -9,7 +9,6 @@ import getpass
 if platform.system() == "Linux":
     source_hotkeys = "/home/burny/Dropbox/github/SC2Hotkeys/Burny.SC2Hotkeys"
     source_hotkeys2 = "/home/burny/Dropbox/github/SC2Hotkeys/BurnySteal.SC2Hotkeys"
-    source_hotkeys3 = "/home/burny/Dropbox/github/SC2Hotkeys/BurnyStealColumnMove.SC2Hotkeys"
 # Windows
 else:
     source_hotkeys = r"D:\Dropbox\github\SC2Hotkeys\Burny.SC2Hotkeys"
@@ -38,9 +37,6 @@ if os.path.isfile(source_hotkeys):
             if os.path.isfile(source_hotkeys2):
                 print(f"Copying {source_hotkeys2} to {target_folder}")
                 shutil.copy(source_hotkeys2, target_folder)
-            if os.path.isfile(source_hotkeys3):
-                print(f"Copying {source_hotkeys3} to {target_folder}")
-                shutil.copy(source_hotkeys3, target_folder)
 
     print(f"Copying {source_hotkeys} to {normal_folder}")
     shutil.copy(source_hotkeys, normal_folder)
