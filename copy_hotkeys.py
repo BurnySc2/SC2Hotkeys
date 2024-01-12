@@ -1,4 +1,3 @@
-import sys
 import os
 import shutil
 import platform
@@ -7,8 +6,11 @@ import getpass
 
 # Linux
 if platform.system() == "Linux":
-    source_hotkeys = "/home/burny/Dropbox/github/SC2Hotkeys/Burny.SC2Hotkeys"
-    source_hotkeys2 = "/home/burny/Dropbox/github/SC2Hotkeys/BurnySteal.SC2Hotkeys"
+    source_hotkeys = "/home/burny/syncthing/secrets/SC2Hotkeys/Burny.SC2Hotkeys"
+    source_hotkeys2 = "/home/burny/syncthing/secrets/SC2Hotkeys/BurnySteal.SC2Hotkeys"
+    source_hotkeys2 = (
+        "/home/burny/syncthing/secrets/SC2Hotkeys/BurnyStealColemak.SC2Hotkeys"
+    )
 # Windows
 else:
     source_hotkeys = r"D:\Dropbox\github\SC2Hotkeys\Burny.SC2Hotkeys"
@@ -19,8 +21,8 @@ if platform.system() == "Linux":
     user_name = getpass.getuser()
     # normal_folder = f"/home/{user_name}/Games/battlenet/drive_c/users/{user_name}/My Documents/StarCraft II/Hotkeys"
     # accounts_folder = f"/home/{user_name}/Games/battlenet/drive_c/users/{user_name}/My Documents/StarCraft II/Accounts"
-    normal_folder = f"/media/ssd480/Games/SC2/drive_c/users/{user_name}/My Documents/StarCraft II/Hotkeys"
-    accounts_folder = f"/media/ssd480/Games/SC2/drive_c/users/{user_name}/My Documents/StarCraft II/Accounts"
+    normal_folder = "/media/ssd480/Games/starcraft4/pfx/drive_c/users/burny/Documents/StarCraft II/Hotkeys/"
+    accounts_folder = "/media/ssd480/Games/starcraft4/pfx/drive_c/users/burny/Documents/StarCraft II/Accounts/"
 # Windows
 else:
     user_name = os.environ["USERNAME"]
