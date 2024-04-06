@@ -6,10 +6,10 @@ import getpass
 
 # Linux
 if platform.system() == "Linux":
-    source_hotkeys = "/home/burny/syncthing/secrets/SC2Hotkeys/Burny.SC2Hotkeys"
-    source_hotkeys2 = "/home/burny/syncthing/secrets/SC2Hotkeys/BurnySteal.SC2Hotkeys"
+    source_hotkeys = "/home/burny/syncthing/secrets/repos/SC2Hotkeys/Burny.SC2Hotkeys"
+    source_hotkeys2 = "/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnySteal.SC2Hotkeys"
     source_hotkeys2 = (
-        "/home/burny/syncthing/secrets/SC2Hotkeys/BurnyStealColemak.SC2Hotkeys"
+        "/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnyStealColemak.SC2Hotkeys"
     )
 # Windows
 else:
