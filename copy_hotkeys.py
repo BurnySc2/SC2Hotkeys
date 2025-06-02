@@ -21,8 +21,8 @@ if platform.system() == "Linux":
     user_name = getpass.getuser()
     # normal_folder = f"/home/{user_name}/Games/battlenet/drive_c/users/{user_name}/My Documents/StarCraft II/Hotkeys"
     # accounts_folder = f"/home/{user_name}/Games/battlenet/drive_c/users/{user_name}/My Documents/StarCraft II/Accounts"
-    normal_folder = Path("/media/ssd250/Games/StarCraft/drive_c/users/burny/Documents/StarCraft II/Hotkeys/")
-    accounts_folder = Path("/media/ssd250/Games/StarCraft/drive_c/users/burny/Documents/StarCraft II/Accounts/")
+    normal_folder = Path("/media/ssd250/Games/StarCraft/pfx/drive_c/users/burny/Documents/StarCraft II/Hotkeys/")
+    accounts_folder = Path("/media/ssd250/Games/StarCraft/pfx/drive_c/users/burny/Documents/StarCraft II/Accounts/")
 # Windows
 else:
     user_name = os.environ["USERNAME"]
