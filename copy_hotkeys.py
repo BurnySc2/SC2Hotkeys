@@ -7,14 +7,18 @@ import getpass
 
 # Linux
 if platform.system() == "Linux":
-    source_hotkeys = Path("/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnySteal_QWERTZ.SC2Hotkeys")
-    source_hotkeys2 = Path(
-        "/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnySteal_Colemak.SC2Hotkeys"
-    )
+    source_hotkeys = [
+         Path("/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnySteal_QWERTZ.SC2Hotkeys"),
+         Path("/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnySteal_QWERTY.SC2Hotkeys"),
+         Path("/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnySteal_Colemak.SC2Hotkeys"),
+         Path("/home/burny/syncthing/secrets/repos/SC2Hotkeys/BurnyArcade_Colemak.SC2Hotkeys"),
+    ]
 # Windows
 else:
-    source_hotkeys = r"D:\Dropbox\github\SC2Hotkeys\Burny.SC2Hotkeys"
-    source_hotkeys2 = r"D:\Dropbox\github\SC2HotkeysSmurf\BurnySteal.SC2Hotkeys"
+    source_hotkeys = [
+         Path(r"D:\Dropbox\github\SC2Hotkeys\Burny.SC2Hotkeys"),
+         Path(r"D:\Dropbox\github\SC2HotkeysSmurf\BurnySteal.SC2Hotkeys"),
+    ]
 
 # Linux
 if platform.system() == "Linux":
@@ -26,25 +30,21 @@ if platform.system() == "Linux":
 # Windows
 else:
     user_name = os.environ["USERNAME"]
-    normal_folder = f"C:/Users/{user_name}/Documents/StarCraft II/Hotkeys"
+    normal_folder = Path(f"C:/Users/{user_name}/Documents/StarCraft II/Hotkeys")
     accounts_folder = Path(f"C:/Users/{user_name}/Documents/StarCraft II/Accounts")
 
-if source_hotkeys.is_file():
-    # Copy hotkeys to all account folders
+# Copy hotkeys to all account folders
+normal_folder.mkdir(parents=True, exist_ok=True)
+for source_file in source_hotkeys:
+    target2_file = normal_folder / source_file.name
+    print(f"Copying {source_hotkeys} to {normal_folder}")
+    shutil.copy(source_file, target2_file)
+
     for folder in accounts_folder.iterdir():
         target_folder = folder / "Hotkeys"
         if target_folder.is_dir():
-            shutil.copy(source_hotkeys, target_folder)
-            print(f"Copying {source_hotkeys} to {target_folder}")
-            if source_hotkeys2.is_file():
-                print(f"Copying {source_hotkeys2} to {target_folder}")
-                shutil.copy(source_hotkeys2, target_folder)
-
-    print(f"Copying {source_hotkeys} to {normal_folder}")
-    normal_folder.mkdir(parents=True, exist_ok=True)
-    shutil.copy(source_hotkeys, normal_folder)
-    if source_hotkeys2.is_file():
-        print(f"Copying {source_hotkeys2} to {normal_folder}")
-        shutil.copy(source_hotkeys2, normal_folder)
+            target1_file = target_folder / source_file.name
+            print(f"Copying {source_file} to {target_folder}")
+            shutil.copy(source_file, target1_file)
 else:
     print(f"Source hotkey file not found! Path: {source_hotkeys}")
