@@ -197,6 +197,7 @@ LiberatorAAMode/Liberator=C
 LiberatorAGMode/Liberator=X
 Lift=V
 LoadNearbyMedivac=S
+LoadNearbyMedivac/Medivac=S
 LoadNearbyOverlord/OverlordTransport=S
 LoadNearbyWarpPrism/WarpPrism=S
 LoadOutSpray=D
