@@ -216,6 +216,7 @@ MassRecall/Mothership=Z
 Medivac/Starport=W
 MedivacSpeedBoost/Medivac=X
 MissileTurret/SCV=X
+MorphBackToGateway/Gateway=X
 MorphBackToGateway/WarpGate=X
 MorphMorphalisk/Queen=X
 MorphToHellion/Hellion=X
